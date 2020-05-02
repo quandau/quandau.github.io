@@ -14,6 +14,11 @@
                 hreflang="vn"
                 href="/vn/categories/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/categories/"
+                />
   </url>
   
   <url>
@@ -28,6 +33,11 @@
                 hreflang="vn"
                 href="/vn/"
                 />
+       <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/"
+                />
   </url>
   
   <url>
@@ -41,6 +51,11 @@
                 rel="alternate"
                 hreflang="vn"
                 href="/vn/tags/"
+                />
+        <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="/fr/tags/"
                 />
   </url>
     
