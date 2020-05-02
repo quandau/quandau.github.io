@@ -43,16 +43,5 @@
                 href="/vn/tags/"
                 />
   </url>
-      <loc>/vn/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="/fr/tags/"
-                />
-  </url>
+    
 </urlset>
