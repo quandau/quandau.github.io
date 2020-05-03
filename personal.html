@@ -1,0 +1,826 @@
+
+<html>
+<head>
+<title>Welcome to Quan Dau</title>
+<meta name="Author" content="Gerard Ferrandez at http://www.dhteumeuleu.com">
+<meta http-equiv="imagetoolbar" content="no">
+
+<style type="text/css">
+body {
+	background: #161616 url(pattern_40.gif) top left repeat;
+	margin: 0;
+	padding: 0;
+	font: 12px normal Verdana, Arial, Helvetica, sans-serif;
+	height: 100%;
+	color:#333333;
+}
+
+* {margin: 0; padding: 0; outline: none;}
+
+img {border: none;}
+
+a { 
+	text-decoration:none; 
+	color:#00c6ff;
+}
+
+h1 {
+	font: 15px normal Arial, Helvetica, sans-serif;
+	padding: 20px;	margin: 0;
+	text-align:center;
+	color:gray;
+}
+
+h1 small{
+	font: 0.2em normal  Arial, Helvetica, sans-serif;
+	text-transform:uppercase; letter-spacing: 0.2em; line-height: 5em;
+	display: block;
+}
+
+h2 {
+	font: 2em normal Arial, Helvetica, sans-serif;
+	padding-bottom:30px;
+	color:#333333;
+	display:block;
+}
+
+h3 {
+	font: 1em Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#fff;
+	display:block;
+	padding:10px;
+}
+
+.container {
+	width: 1024px;
+	margin: 0 auto; 
+	overflow: hidden;
+	position:relative;
+	padding-bottom:0px;
+}
+
+
+/* SECOND EXAMPLE */
+
+#paneltwo { 
+	width:300px;
+	list-style:none; 
+	position:relative;
+	display:inline;
+}
+
+#paneltwo li {  
+	border-radius:3px 3px 3px 3px; 
+	margin-top:5px;
+	width:150px;
+	float:left;
+	overflow:hidden;
+	position:relative;
+	background: #000000;
+	background: -moz-linear-gradient(top, #161616 0%, #000000 100%);
+	background: -webkit-linear-gradient(top, #161616 0%,#000000 100%);
+	background: -o-linear-gradient(top, #161616 0%,#000000 100%);
+	border-left:1px solid #111; border-top:1px solid #111; border-right:1px solid #333; border-bottom:1px solid #333;
+}
+
+#paneltwo li.mask { /* It allows us to hide the link behind it */
+	z-index:10; 
+	overflow:hidden;
+}
+
+#paneltwo li.linkOne, #paneltwo li.linkTwo, #paneltwo li.linkThree, #paneltwo li.linkFour, #paneltwo li.linkFive,#paneltwo li.linksix,#paneltwo li.linkseven 
+{   -moz-transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+}
+
+#paneltwo:hover li.linkOne, #paneltwo:hover li.linkTwo, #paneltwo:hover li.linkThree, #paneltwo:hover li.linkFour, #paneltwo:hover li.linkFive,#paneltwo:hover li.linkSix,#paneltwo:hover li.linkSeven 
+{ 	-moz-transform:translateX(0px);
+	-moz-transition: all 1s ease-in-out; 
+	-webkit-transform:translateX(0px);
+	-webkit-transition: all 1s ease-in-out; 
+	-o-transform:translateX(0px);
+	-o-transition: all 1s ease-in-out; 
+}
+
+#paneltwo li.linkOne {
+	-moz-transform:translateX(-90%); 
+	-moz-transition-delay:0.6s; 
+	
+	-webkit-transform:translateX(-90%); 
+	-webkit-transition-delay:0.6s; 
+	
+	-o-transform:translateX(-90%); 
+	-o-transition-delay:0.6s; 
+	
+	z-index:5; 
+}
+#paneltwo li.linkTwo { 
+	-moz-transform:translateX(-180%); 
+	-moz-transition-delay:0.5s; 
+	
+	-webkit-transform:translateX(-180%); 
+	-webkit-transition-delay:0.5s; 
+	
+	-o-transform:translateX(-180%); 
+	-o-transition-delay:0.5s; 
+	
+	z-index:4;
+}
+#paneltwo li.linkThree { 
+	-moz-transform:translateX(-270%); 
+	-moz-transition-delay:0.4s; 
+	
+	-webkit-transform:translateX(-270%); 
+	-webkit-transition-delay:0.4s; 
+	
+	-o-transform:translateX(-270%); 
+	-o-transition-delay:0.4s;
+	
+	z-index:3;
+}
+#paneltwo li.linkFour { 
+	-moz-transform:translateX(-360%); 
+	-moz-transition-delay:0.3s;
+	
+	-webkit-transform:translateX(-360%); 
+	-webkit-transition-delay:0.3s;
+	
+	-o-transform:translateX(-360%); 
+	-o-transition-delay:0.3s; 
+	z-index:2;
+}
+
+#paneltwo li.linkFive { 
+	-moz-transform:translateX(-450%); 
+	-moz-transition-delay:0.2s;
+	
+	-webkit-transform:translateX(-450%); 
+	-webkit-transition-delay:0.2s;
+	
+	-o-transform:translateX(-450%); 
+	-o-transition-delay:0.2s;
+	 
+	z-index:1;
+}
+#paneltwo li.linkSix { 
+	-moz-transform:translateX(-450%); 
+	-moz-transition-delay:0.2s;
+	
+	-webkit-transform:translateX(-450%); 
+	-webkit-transition-delay:0.2s;
+	
+	-o-transform:translateX(-450%); 
+	-o-transition-delay:0.2s;
+	 
+	z-index:1;
+}#paneltwo li.linkSeven { 
+	-moz-transform:translateX(-450%); 
+	-moz-transition-delay:0.2s;
+	
+	-webkit-transform:translateX(-450%); 
+	-webkit-transition-delay:0.2s;
+	
+	-o-transform:translateX(-450%); 
+	-o-transition-delay:0.2s;
+	 
+	z-index:1;
+}
+#paneltwo:hover li.linkOne { 
+	-moz-transition-delay:0s; 
+	-webkit-transition-delay:0s; 
+	-o-transition-delay:0s; 
+	z-index:5;
+}
+#paneltwo:hover li.linkTwo { 
+	-moz-transition-delay:0.2s;
+	-webkit-transition-delay:0.2s;
+	-o-transition-delay:0.2s; 
+	z-index:4;
+}
+#paneltwo:hover li.linkThree { 
+	-moz-transition-delay:0.4s;
+	-webkit-transition-delay:0.4s;
+	-o-transition-delay:0.4s; 
+	z-index:3;
+}
+#paneltwo:hover li.linkFour { 
+	-moz-transition-delay:0.6s;
+	-webkit-transition-delay:0.6s;
+	-o-transition-delay:0.6s; 
+	z-index:2;
+}
+#paneltwo:hover li.linkFive { 
+	-moz-transition-delay:0.8s;
+	-webkit-transition-delay:0.8s;
+	-o-transition-delay:0.8s; 
+	z-index:1;
+}
+#paneltwo:hover li.linkSix { 
+	-moz-transition-delay:0.8s;
+	-webkit-transition-delay:0.8s;
+	-o-transition-delay:0.8s; 
+	z-index:1;
+}#paneltwo:hover li.linkSeven { 
+	-moz-transition-delay:0.8s;
+	-webkit-transition-delay:0.8s;
+	-o-transition-delay:0.8s; 
+	z-index:1;
+}
+#paneltwo li a { 
+	color:#fff; 
+	display:block; 
+	padding:10px;
+}
+
+#paneltwo li a:hover { 
+	color:#00c6ff;
+}
+
+
+@-moz-keyframes bounceX {
+			0% { -moz-transform: translateX(-205px); -moz-animation-timing-function: ease-in; }
+			
+			40% { -moz-transform: translateX(-100px); -moz-animation-timing-function: ease-in; }
+			65% { -moz-transform: translateX(-52px); -moz-animation-timing-function: ease-in; }
+			82% { -moz-transform: translateX(-25px); -moz-animation-timing-function: ease-in; }
+			92% { -moz-transform: translateX(-12px); -moz-animation-timing-function: ease-in; }
+			
+			55%, 75%, 87%, 97%, 100% { -moz-transform: translateX(0px); -moz-animation-timing-function: ease-out; }
+}
+
+@-webkit-keyframes bounceX {
+			0% { -webkit-transform: translateX(-205px); -webkit-animation-timing-function: ease-in; }
+			
+			40% { -webkit-transform: translateX(-100px); -webkit-animation-timing-function: ease-in; }
+			65% { -webkit-transform: translateX(-52px); -webkit-animation-timing-function: ease-in; }
+			82% { -webkit-transform: translateX(-25px); -webkit-animation-timing-function: ease-in; }
+			92% { -webkit-transform: translateX(-12px); -webkit-animation-timing-function: ease-in; }
+			
+			55%, 75%, 87%, 97%, 100% { -webkit-transform: translateX(0px); -webkit-animation-timing-function: ease-out; }
+}
+
+</style>
+
+
+<div class="container">   
+   
+    <ul id="paneltwo">
+        <li class="mask"><h3>MENU ></h3></li>
+        <li class="linkOne"><a href="personal.html">Personal Life</a></li>
+		<li class="linktwo"><a href="academic.html">Academic Life</a></li>
+        <li class="linktwo"><a href="love.html">Love Life</a></li>
+	
+        
+      
+  
+      
+    </ul>
+</div>
+
+
+<style type="text/css">
+	html {
+		overflow: hidden;
+	}
+	body {
+		position: absolute;
+		margin: 0px;
+		padding: 0px;
+		background:url(images/personal/bg_q.jpg);
+	
+		width: 100%;
+		height: 100%;
+		color: #313131;
+		font-family: arial;
+		font-size: 0.8em;
+	}
+	#screen {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: transparent;
+		overflow: hidden;
+	}
+	#screen img, canvas { 
+		position: absolute;
+		left: -9999px;
+		cursor: pointer;
+        image-rendering: optimizeSpeed;
+
+	}
+	#screen .href {
+		border: #FFF dotted 1px;
+	}
+	#screen .fog { 
+		position: absolute;
+		background: #fff;
+		opacity: 0.1;
+		filter: alpha(opacity=10);
+	}
+	#command {
+		position:absolute;
+		left: 1em;
+		top: 1em;
+		width: 220px;
+		z-index: 30000;
+		background:#000;
+		border: #000 solid 1em;
+	}
+	#bar {
+		position:relative;
+		left: 1em;
+		top: 1em;
+		height: 0px;
+	}
+	#bar .button { 
+		position: absolute;
+		background: #222;
+		width: 0px;
+		height: 0px;
+		cursor: pointer;
+	}
+	#bar .loaded { 
+		background: #666;
+	}
+	#bar .viewed { 
+		background: #fff;
+	}
+	#bar .selected { 
+		background: #f00;
+	}
+	#urlInfo {
+		position: absolute;
+		background: url(images/personal/r.gif) no-repeat 0 4px;
+		visibility: hidden;
+		z-index: 30000;
+		padding-left: 12px;
+		cursor: pointer;
+	}
+</style>
+
+<script type="text/javascript">
+// =============================================================
+//           ===== 3D gallery experiment =====
+// script written by Gerard Ferrandez - April 5, 2010
+// http://www.dhteumeuleu.com
+// use under a CC-BY-NC license
+// -------------------------------------------------------------
+// update: April 17 : added hyperlinks, tweaked z-index
+// =============================================================
+
+var m3D = function () {
+	/* ---- private vars ---- */
+	var diapo = [],
+		imb,
+		scr,
+		bar,
+		selected,
+		urlInfo,
+		imagesPath = "images/personal/",
+		camera = {x:0, y:0, z:-650, s:0, fov: 500},
+		nw = 0,
+		nh = 0;
+	/* ==== camera tween methods ==== */
+	camera.setTarget = function (c0, t1, p) {
+		if (Math.abs(t1 - c0) > .1) {
+			camera.s = 1;
+			camera.p = 0;
+			camera.d = t1 - c0;
+			if (p) {
+				camera.d *= 2;
+				camera.p = 9;
+			}
+		}
+	}
+	camera.tween = function (v) {
+		if (camera.s != 0) {
+			camera.p += camera.s;
+			camera[v] += camera.d * camera.p * .01;
+			if (camera.p == 10) camera.s = -1;
+			else if (camera.p == 0) camera.s = 0;
+		}
+		return camera.s;
+	}
+	/* ==== diapo constructor ==== */
+	var Diapo = function (n, img, x, y, z) {
+		if (img) {
+			this.url = img.url;
+			this.title = img.title;
+			this.color = img.color;
+			this.isLoaded = false;
+			if (document.createElement("canvas").getContext) {
+				/* ---- using canvas in place of images (performance trick) ---- */
+				this.srcImg = new Image();
+				this.srcImg.src = imagesPath + img.src;
+				this.img = document.createElement("canvas");
+				this.canvas = true;
+				scr.appendChild(this.img);
+			} else {
+				/* ---- normal image ---- */
+				this.img = document.createElement('img');
+				this.img.src = imagesPath + img.src;
+				scr.appendChild(this.img);
+			}
+			/* ---- on click event ---- */
+			this.img.onclick = function () {
+				if (camera.s) return;
+				if (this.diapo.isLoaded) {
+					if (this.diapo.urlActive) {
+						/* ---- jump hyperlink ---- */
+						top.location.href = this.diapo.url;
+					} else {
+						/* ---- target positions ---- */
+						camera.tz = this.diapo.z - camera.fov;
+						camera.tx = this.diapo.x;
+						camera.ty = this.diapo.y;
+						/* ---- disable previously selected img ---- */
+						if (selected) {
+							selected.but.className = "button viewed";
+							selected.img.className = "";
+							selected.img.style.cursor = "pointer";
+							selected.urlActive = false;
+							urlInfo.style.visibility = "hidden";
+						}
+						/* ---- select current img ---- */
+						this.diapo.but.className = "button selected";
+						interpolation(false);
+						selected = this.diapo;
+					}
+				}
+			}
+			/* ---- command bar buttons ---- */
+			this.but = document.createElement('div');
+			this.but.className = "button";
+			bar.appendChild(this.but);
+			this.but.diapo = this;
+			this.but.style.left = Math.round((this.but.offsetWidth  * 1.2) * (n % 4)) + 'px';
+			this.but.style.top  = Math.round((this.but.offsetHeight * 1.2) * Math.floor(n / 4)) + 'px';
+			this.but.onclick = this.img.onclick;
+			imb = this.img;
+			this.img.diapo = this;
+			this.zi = 25000;
+		} else {
+			/* ---- transparent div ---- */
+			this.img = document.createElement('div');
+			this.isLoaded = true;
+			this.img.className = "fog";
+			scr.appendChild(this.img);
+			this.w = 300;
+			this.h = 300;
+			this.zi = 15000;
+		}
+		/* ---- object variables ---- */
+		this.x = x;
+		this.y = y;
+		this.z = z;
+		this.css = this.img.style;
+	}
+	/* ==== main 3D animation ==== */
+	Diapo.prototype.anim = function () {
+		if (this.isLoaded) {
+			/* ---- 3D to 2D projection ---- */
+			var x = this.x - camera.x;
+			var y = this.y - camera.y;
+			var z = this.z - camera.z;
+			if (z < 20) z += 5000;
+			var p = camera.fov / z;
+			var w = this.w * p;
+			var h = this.h * p;
+			/* ---- HTML rendering ---- */
+			this.css.left   = Math.round(nw + x * p - w * .5) + 'px';
+			this.css.top    = Math.round(nh + y * p - h * .5) + 'px';  
+			this.css.width  = Math.round(w) + 'px';
+			this.css.height = Math.round(h) + 'px';
+			this.css.zIndex = this.zi - Math.round(z);
+		} else {
+			/* ---- image is loaded? ---- */
+			this.isLoaded = this.loading();
+		}
+	}
+	/* ==== onload initialization ==== */
+	Diapo.prototype.loading = function () {
+		if ((this.canvas && this.srcImg.complete) || this.img.complete) {
+			if (this.canvas) {
+				/* ---- canvas version ---- */
+				this.w = this.srcImg.width;
+				this.h = this.srcImg.height;
+				this.img.width = this.w;
+				this.img.height = this.h;
+				var context = this.img.getContext("2d");
+				context.drawImage(this.srcImg, 0, 0, this.w, this.h);
+			} else {
+				/* ---- plain image version ---- */
+				this.w = this.img.width;
+				this.h = this.img.height;
+			}
+			/* ---- button loaded ---- */
+			this.but.className += " loaded";
+			return true;
+		}
+		return false;
+	}
+	////////////////////////////////////////////////////////////////////////////
+	/* ==== screen dimensions ==== */
+	var resize = function () {
+		nw = scr.offsetWidth * .5;
+		nh = scr.offsetHeight * .5;
+	}
+	/* ==== disable interpolation during animation ==== */
+	var interpolation = function (bicubic) {
+		var i = 0, o;
+		while( o = diapo[i++] ) {
+			if (o.but) {
+				o.css.msInterpolationMode = bicubic ? 'bicubic' : 'nearest-neighbor'; // makes IE8 happy
+				o.css.imageRendering = bicubic ? 'optimizeQuality' : 'optimizeSpeed'; // does not really work...
+			}
+		}
+	}
+	/* ==== init script ==== */
+	var init = function (data) {
+		/* ---- containers ---- */
+		scr = document.getElementById("screen");
+		bar = document.getElementById("bar");
+		urlInfo = document.getElementById("urlInfo");
+		resize();
+		/* ---- loading images ---- */
+		var i = 0, 
+		    o,
+			n = data.length;
+		while( o = data[i++] ) {
+			/* ---- images ---- */
+			var x = 1000 * ((i % 4) - 1.5);
+			var y = Math.round(Math.random() * 4000) - 2000;
+			var z = i * (5000 / n);
+			diapo.push( new Diapo(i - 1, o, x, y, z));
+			/* ---- transparent frames ---- */
+			var k = diapo.length - 1;
+			for (var j = 0; j < 3; j++) {
+				var x = Math.round(Math.random() * 4000) - 2000;
+				var y = Math.round(Math.random() * 4000) - 2000;
+				diapo.push( new Diapo(k, null, x, y, z + 100));
+			}
+		}
+		/* ---- start engine ---- */
+		run();
+	}
+	////////////////////////////////////////////////////////////////////////////
+	/* ==== main loop ==== */
+	var run = function () {
+		/* ---- x axis move ---- */
+		if (camera.tx) {
+
+			if (!camera.s) camera.setTarget(camera.x, camera.tx);
+			var m = camera.tween('x');
+			if (!m) camera.tx = 0;
+		/* ---- y axis move ---- */
+		} else if (camera.ty) {
+			if (!camera.s) camera.setTarget(camera.y, camera.ty); 
+			var m = camera.tween('y');
+			if (!m) camera.ty = 0;
+		/* ---- z axis move ---- */
+		} else if (camera.tz) {
+			if (!camera.s) camera.setTarget(camera.z, camera.tz);
+			var m = camera.tween('z');
+			if (!m) {
+				/* ---- animation end ---- */
+				camera.tz = 0;
+				interpolation(true);
+				/* ---- activate hyperlink ---- */
+				if (selected.url) {
+					selected.img.style.cursor = "pointer";
+					selected.urlActive = true;
+					selected.img.className = "href";
+					urlInfo.diapo = selected;
+					urlInfo.onclick = selected.img.onclick;
+					urlInfo.innerHTML = selected.title || selected.url;
+					urlInfo.style.visibility = "visible";
+					urlInfo.style.color = selected.color || "#fff";
+					urlInfo.style.top = Math.round(selected.img.offsetTop + selected.img.offsetHeight - urlInfo.offsetHeight - 5) + "px";
+					urlInfo.style.left = Math.round(selected.img.offsetLeft + selected.img.offsetWidth - urlInfo.offsetWidth - 5) + "px";
+				} else {
+					selected.img.style.cursor = "default";
+				}
+			}
+		}
+		/* ---- anim images ---- */
+		var i = 0, o;
+		while( o = diapo[i++] ) o.anim();
+		/* ---- loop ---- */
+		setTimeout(run, 32);
+	}
+	return {
+		////////////////////////////////////////////////////////////////////////////
+		/* ==== initialize script ==== */
+		init : init
+	}
+}();
+
+</script>
+<style type="text/css">
+body{
+	
+	 font:bold 12px Arial, Helvetica, sans-serif;
+	 margin:0;
+	 padding:0;
+	 min-width:12px;
+	 color:#bbbbbb; 
+}
+
+a { 
+	text-decoration:none; 
+	color:#00c6ff;
+}
+
+h1 {
+	font: 12px normal Arial, Helvetica, sans-serif;
+	padding: 20px;	margin: 0;
+	text-align:center;
+}
+
+h1 small{
+	font: 0.2em normal  Arial, Helvetica, sans-serif;
+	text-transform:uppercase; letter-spacing: 0.2em; line-height: 5em;
+	display: block;
+}
+
+h2 {
+    font-weight:20;
+    color:#bbb;
+    font-size:20px;
+}
+
+h2, p {
+	margin-bottom:10px;
+}
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('BebasNeue-webfont.eot');
+    src: url('BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('BebasNeue-webfont.woff') format('woff'),
+         url('BebasNeue-webfont.ttf') format('truetype'),
+         url('BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.container {width: 960px; margin: 0 auto; overflow: hidden;}
+
+.clock {width:800px; margin:0 auto; padding:30px; border:0px solid #333; color:#fff;z-index:100; }
+
+#Date { font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif; font-size:20px; text-align:center; text-shadow:0 0 5px #00c6ff; }
+
+ul { width:800px; margin:0 auto; padding:0px; list-style:none; text-align:center; }
+ul li { display:inline; font-size:1em; text-align:center; font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif; text-shadow:0 0 5px #00c6ff; }
+
+#point { position:relative; -moz-animation:mymove 1s ease infinite; -webkit-animation:mymove 1s ease infinite; padding-left:10px; padding-right:10px; }
+
+@-webkit-keyframes mymove 
+{
+0% {opacity:1.0; text-shadow:0 0 20px #00c6ff;}
+50% {opacity:0; text-shadow:none; }
+100% {opacity:1.0; text-shadow:0 0 20px #00c6ff; }	
+}
+
+
+@-moz-keyframes mymove 
+{
+0% {opacity:1.0; text-shadow:0 0 20px #00c6ff;}
+50% {opacity:0; text-shadow:none; }
+100% {opacity:1.0; text-shadow:0 0 20px #00c6ff; }	
+}
+
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+// Create two variable with the names of the months and days in an array
+var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]; 
+var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+// Create a newDate() object
+var newDate = new Date();
+// Extract the current date from Date object
+newDate.setDate(newDate.getDate());
+// Output the day, date, month and year    
+$('#Date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+
+setInterval( function() {
+	// Create a newDate() object and extract the seconds of the current time on the visitor's
+	var seconds = new Date().getSeconds();
+	// Add a leading zero to seconds value
+	$("#sec").html(( seconds < 10 ? "0" : "" ) + seconds);
+	},1000);
+	
+setInterval( function() {
+	// Create a newDate() object and extract the minutes of the current time on the visitor's
+	var minutes = new Date().getMinutes();
+	// Add a leading zero to the minutes value
+	$("#min").html(( minutes < 10 ? "0" : "" ) + minutes);
+    },1000);
+	
+setInterval( function() {
+	// Create a newDate() object and extract the hours of the current time on the visitor's
+	var hours = new Date().getHours();
+	// Add a leading zero to the hours value
+	$("#hours").html(( hours < 10 ? "0" : "" ) + hours);
+    }, 1000);
+	
+}); 
+</script>
+
+<body>
+		
+	
+
+<div id="screen">
+
+	<div id="command">
+
+		
+		AUTOMATIC RETURNS TO HOME<br>
+		<p>&nbsp;</p>
+		<div id="bar"></div>
+
+<a href="https://infohquan.github.io"><span style="font-size: x-large;"><strong><span style="color: yellow;"           >>> ENTER >><head>         <script type="text/javascript">             var max = 120;             var value = max;             function counter(){                 if (value == 0)                     value = max;                 value--;                 document.getElementById('countdown').innerHTML = value + '';             }             setInterval("counter()",1000);         </script>     </head>     <body>         <span id="countdown"></span> </strong></span></a></p>
+
+<p>
+<meta http-equiv="refresh" content="120; url=https://infohquan.github.io/" /></p>
+</div>
+	<div id="urlInfo"></div>
+</div>
+
+
+
+<script type="text/javascript">
+/* ==== start script ==== */
+setTimeout(function() {
+	m3D.init(
+		[ 
+			{ src: '1.jpg', url: 'http://#', title: '', color: '#fff' },
+			{ src: '2.jpg' },
+			{ src: '3.jpg' },
+			{ src: '4.jpg' },
+			{ src: '5.jpg' },
+			{ src: '6.jpg' },
+			{ src: '7.jpg' },
+			{ src: '8.jpg' },
+			{ src: '9.jpg' },
+			{ src: '10.jpg' },
+			{ src: '11.jpg', url: 'http://#', title: '', color: '#fff' },
+			{ src: '12.jpg' },
+			{ src: '13.jpg' },
+			{ src: '1.jpg', url: 'http://#', title: '', color: '#fff' },
+			{ src: '2.jpg' },
+			{ src: '25.jpg' },
+			{ src: '24.jpg' },
+			{ src: '23.jpg' },
+			{ src: '22.jpg' },
+			{ src: '21.jpg' },
+			{ src: '20.jpg' },
+			{ src: '19.jpg' },
+			{ src: '18.jpg' },
+			{ src: '17.jpg', url: 'http://#', title: '', color: '#fff' },
+			{ src: '16.jpg' },
+			{ src: '15.jpg' },
+			{ src: '27.jpg' },
+			{ src: '28.jpg' },
+			{ src: '29.jpg' },
+			{ src: '30.jpg' },
+			{ src: '31.jpg' },
+			{ src: '32.jpg' },
+			{ src: '33.jpg' },
+			{ src: '34.jpg' },
+			{ src: '35.jpg' },
+			{ src: '36.jpg' },
+			{ src: '37.jpg' },
+			{ src: '38.jpg' },
+			{ src: '39.jpg' },
+			{ src: '40.jpg' },
+		
+			
+		]
+	);
+}, 500);
+</script>
+<center>
+<div class="container">
+<div class="clock">
+<div id="Date"></div>
+
+<ul>
+	<li id="hours"> </li>
+    <li id="point">:</li>
+    <li id="min"> </li>
+    <li id="point">:</li>
+    <li id="sec"> </li>
+</ul>	
+</div></div>
+</center>
+</body>
+</html>
+
+
