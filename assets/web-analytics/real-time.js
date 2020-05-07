@@ -13,6 +13,7 @@ $(function () {
 	
 	var pageViewsPerSecondDataPoints = [];
 	var pageViewsPerMinuteDataPoints = [];
+
 	
 	// data for demo only
 	var initialDataPageViewsPerSecond = [1,2,4,4,3,2,1,5,1,2,2,0,0,1,2,4,5,3,4,2,2,2,2,0,1,2,4,4,4,5,5,1,2,4,1,1,1,0,0,1,2,3,3,5,5,2,0,1,1,0,2,2,2,0,4,1,4,4,2,2];
@@ -55,6 +56,7 @@ $(function () {
 				{ name: "Lao PDR", users: 1 },
 				{ name: "Vietnam", users:3 },
 			]
+			
 		}
 		
 	];
@@ -200,6 +202,57 @@ $(function () {
 		]
 	});
 			
+			
+	var revenueSplineAreaChart = new CanvasJS.Chart("h-index-bar-chart", {
+		animationEnabled: true,
+		backgroundColor: "transparent",
+		axisX: {
+			interval: 1,
+			intervalType: "year",
+			labelFontColor: "#717171",
+			labelFontSize: 16,
+			lineColor: "#a2a2a2",
+			minimum: new Date("1 Jan 2017"),
+			tickColor: "#a2a2a2",
+			valueFormatString: "YYYY"
+		},
+		axisY: {
+			gridThickness: 0,
+			includeZero: false,
+			labelFontColor: "#717171",
+			labelFontSize: 14,
+			lineColor: "#a2a2a2",
+			prefix: "",
+			tickColor: "#a2a2a2"
+		},
+		toolTip: {
+			borderThickness: 0,
+			cornerRadius: 0,
+			fontStyle: "normal"
+		},
+		data: [
+			{
+				color: "#007399",
+				markerSize: 0,
+				type: "splineArea",
+				yValueFormatString: "###",
+				dataPoints: [
+					{ x: new Date("1 Jan 2017"), y: 2},
+					{ x: new Date("1 Jan 2018"), y: 3 },
+					{ x: new Date("1 Jan 2019"), y: 5 },
+					{ x: new Date("1 Jan 2020"), y: 6 },
+					
+				]
+			}
+		]
+	});
+		
+	
+	revenueSplineAreaChart.render();		
+			
+		
+			
+			
 	// CanvasJS column chart to show live page views per minute
 	var pageViewsPerMinuteColumnChart = new CanvasJS.Chart("page-views-per-minute-column-chart", {
 		animationDuration: 800,
@@ -239,6 +292,8 @@ $(function () {
 			}
 		]
 	});
+
+
 
 	// CanvasJS column chart to show live page views per second
 	var pageViewsPerSecondColumnChart = new CanvasJS.Chart("page-views-per-second-column-chart", {
@@ -287,7 +342,7 @@ $(function () {
 		colorSet: "customColorSet",
 		axisX: {
 			labelFontColor: "#717171",
-			labelFontSize: 18,
+			labelFontSize: 20,
 			lineThickness: 0,
 			tickThickness: 0
 		},
@@ -308,7 +363,7 @@ $(function () {
 			{
 				indexLabelFontColor: "#717171",
 				indexLabelFontFamily: "calibri",
-				indexLabelFontSize: 18,
+				indexLabelFontSize: 1,
 				indexLabelPlacement: "outside",
 				indexLabelFormatter: function (e) {
 					return Math.round(e.dataPoint.y / activeUsers * 100) + "%";  
@@ -327,6 +382,10 @@ $(function () {
 	});
 
 	usersStateBarChart.render();
+	
+	
+	
+	
 	
 	//----------------------------------------------------------------------------------//
 	var allCharts = [
@@ -516,4 +575,14 @@ $(function () {
 		sidebarToggleOnClick();
 	})();
 	
+	
+	
+	
+	
+	
 });
+
+
+
+
+
