@@ -246,12 +246,12 @@ $(function () {
 			}
 		]
 	});
-		
 	
-	revenueSplineAreaChart.render();		
+		
 			
 		
 			
+
 			
 	// CanvasJS column chart to show live page views per minute
 	var pageViewsPerMinuteColumnChart = new CanvasJS.Chart("page-views-per-minute-column-chart", {
@@ -384,7 +384,7 @@ $(function () {
 	usersStateBarChart.render();
 	
 	
-	
+	revenueSplineAreaChart.render();	
 	
 	
 	//----------------------------------------------------------------------------------//
