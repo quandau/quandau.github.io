@@ -8,7 +8,7 @@
   <meta name="description" content="Thank you for visiting my site">
   <meta name="author" content="Quan DAU">
   <meta name="generator" content="Hugo 0.69.2" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <!-- plugins -->
   
   <link rel="stylesheet" href="/plugins/bootstrap/bootstrap.min.css">
@@ -36,6 +36,49 @@
   <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
   <link rel="icon" href="/images/favicon.png" type="image/x-icon">
 
+	<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>	
+	
 </head><body>
 <!-- preloader start -->
 <div class="preloader">
@@ -265,9 +308,53 @@
           <p>Tôi tốt nghiệp học vị thạc sĩ tại trường Đại Học MSU-Iligan Institute of Technology năm 2013 and tiến sĩ tại trường Đại Học Khon Kaen năm 2017. Nghiên cứu của tôi liên quan đến các lĩnh vực khoa học về tài nguyên nước và biến đổi khí hậu </p>
           <h5>LĨNH VỰC CHUYÊN SÂU</h5>
           <p> Tôi chủ yếu nghiên cứu về các tính chất thủy văn, quản lý tài nguyên nước, ước tính chất lượng nước và khối lượng có sẵn, sử dụng hình ảnh vệ tinh để phân tích dữ liệu, tôi thường sử dụng mạng lưới thần kinh nhân tạo để dự đoán trong tương lai, phát triển các phương pháp để đối phó với biến đổi khí hậu, quản lý nước một cách hiệu quả cho nông nghiệp, dự báo kinh tế xã hội thay đổi theo thời gian, hiểu biết về cách vận hành & tối ưu hóa hồ chứa - thủy điện, ứng dụng các mô hình thủy văn, chuyên về các ứng phó với thiên tai (lũ lụt / hạn hán) và phân tích các rủi ro có thể xảy ra.</p>
-          
-          <a href="/" class="download-cv hvr-icon-hang"> Tải CV (Chỉ dành cho nhà tuyển dụng) &nbsp; &nbsp; &nbsp;</a>
-          
+         
+	<!-- Trigger/Open The Modal -->
+<button id="myBtn">Tải Hồ Sơ Cá Nhân</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Thành thật thứ lỗi ! Hồ sơ của Quân hiện tại chưa có sẵn trên trang Web này:(   </p>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>		
+		
+		
+		
+		
+		 <!-- <a href="/" class="download-cv hvr-icon-hang"> DOWNLOAD MY CV (For Recruiter only) &nbsp; &nbsp; &nbsp; </a>-->
+              
  
 		
         </div>
