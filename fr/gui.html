@@ -20,9 +20,9 @@ body {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 11px 13px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 13px;
 }
 
 .topnav a:hover {
@@ -72,13 +72,13 @@ body {
   font-size: 18px;
   padding: 10px;
   border: none;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
+  background: yellow;
+  color: black;
   cursor: pointer;
 }
 
 #myBtn:hover {
-  background: #ddd;
+  background: red;
   color: black;
 }
 </style>
@@ -89,7 +89,7 @@ body {
 
 
 <div class="topnav">
-  <a class="active" href="http://quandau.com">Home</a><a href=""><span style= "font-size: small;" ><strong><span style="color: white;"           > or waits for  <head>         <script type="text/javascript">             var max = 250;             var value = max;             function counter(){                 if (value == 0)                     value = max;                 value--;                 document.getElementById('countdown').innerHTML = value + '';             }             setInterval("counter()",1000);         </script>     </head>     <body>         <span id="countdown"></span> sec </strong></span></a>
+  <a class="active" href="http://quandau.com">Home<span style= "font-size: small;" ><strong><span style="color: white;"           > or waits for  <head>         <script type="text/javascript">             var max = 250;             var value = max;             function counter(){                 if (value == 0)                     value = max;                 value--;                 document.getElementById('countdown').innerHTML = value + '';             }             setInterval("counter()",1000);         </script>     </head>     <body>         <span id="countdown"></span> sec </strong></span></a>
   <a href="http://quandau.com/academic.html">Gallery</a>&nbsp;
   <a href="http://quandau.com/visualisation.html">Visualisation</a>
   <a href="http://quandau.com/gis.html">GIS System</a>
@@ -97,16 +97,21 @@ body {
   
 </div>
 
-<video autoplay muted loop id="myVideo">
+
+
+
+
+<video autoplay loop id="myVideo">
   <source src="https://www.egis.hw.ac.uk/sushiwat/wp-content/uploads/sites/29/2019/06/y2mate.com-sushiwat_v3_QU7QvHv3n7M_1080p.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 </center>
 
+
+
 <div class="content">
-  <h1>Notice</h1>
   <p>This model is under review for publication in the Journal of Water Resources Planning and Management</p>
-  <button id="myBtn" onclick="myFunction()">Pause</button>
+  <button id="myBtn" onclick="myFunction()">Play</button>
 </div>
 
 <script>
