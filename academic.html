@@ -733,15 +733,25 @@ setInterval( function() {
 }); 
 </script>
 
+<style>
+.img-fluid{
+width:90px;
+height:80px;
+margin-top:63px;
+margin-left:53px;
+position:fixed;
+}
+</style>
+
 <body>
 		
 	
-
+<img class="img-fluid" src="images/logo.png" alt="Quan DAU" >
 <div id="screen">
 
 	<div id="command">
 
-	
+	  
 		<div id="bar"></div>
 
 <a href="https://quandau.com"><span style="font-size: large;"><strong><span style="color: white;"           >Homepage|   or wait <head>         <script type="text/javascript">             var max = 120;             var value = max;             function counter(){                 if (value == 0)                     value = max;                 value--;                 document.getElementById('countdown').innerHTML = value + '';             }             setInterval("counter()",1000);         </script>   </head>     <body>            </strong> <span id="countdown"> </span></a></p>
@@ -805,6 +815,112 @@ setTimeout(function() {
 	);
 }, 500);
 </script>
+
+
+
+
+
+<script language="JavaScript1.2">
+var message="I'm sorry ! You are not permit to download my photos";
+function click(e)
+{
+  if (document.all)
+  {
+    if (event.button==2||event.button==3)
+    {
+      alert(message);
+      return false;
+    }
+  }
+  else
+  {
+    if (e.button==2||e.button==4)
+    {
+      e.preventDefault();
+      e.stopPropagation();
+      alert(message);
+      return false;
+    }
+  }
+}
+if (document.all) // for IE
+{
+  document.onmousedown=click;
+}
+else // for FF
+{
+  document.onclick=click;
+}
+</script>
+<script type="text/javascript">
+function ehan( evnt )
+{
+  if( evnt.which == 3 )
+  {
+    alert( "Text Here" );
+    return false;
+  }
+  return true;
+}
+function ocmh()
+{
+  alert( "I'm sorry ! You are not permit to download my photos" );
+  return false;
+}
+document.oncontextmenu = ocmh;
+document.captureEvents( Event.MOUSEDOWN );
+if( document.layers ) document.onmousedown = ehan;
+</script>
+<SCRIPT language="JavaScript">
+if (window!=top){top.location.href=location.href;}
+</script>
+<script type="text/javascript">
+<!--
+var omitformtags=["input", "textarea", "select"]
+omitformtags=omitformtags.join("|")
+function disableselect(e){
+if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
+return false
+}
+function reEnable(){
+return true
+}
+if (typeof document.onselectstart!="undefined")
+document.onselectstart=new Function ("return false")
+else{
+document.onmousedown=disableselect
+document.onmouseup=reEnable
+}
+-->
+</script>
+
+    <SCRIPT language="JavaScript">
+if (window!=top){top.location.href=location.href;}
+</script>
+<script type="text/javascript">
+<!--
+var omitformtags=["input", "textarea", "select"]
+omitformtags=omitformtags.join("|")
+function disableselect(e){
+if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
+return false
+}
+function reEnable(){
+return true
+}
+if (typeof document.onselectstart!="undefined")
+document.onselectstart=new Function ("return false")
+else{
+document.onmousedown=disableselect
+document.onmouseup=reEnable
+}
+-->
+</script>
+
+
+
+
+
 <center>
 <div class="container">
 <div class="clock">
