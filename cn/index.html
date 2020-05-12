@@ -80,7 +80,34 @@ body {font-family: Arial, Helvetica, sans-serif;}
   cursor: pointer;
 }
 </style>	
+	</style>	
 	
+	<style>
+.accordion {
+
+  color: #444;
+  cursor: pointer;
+  padding: 13px;
+  width: 100%;
+  height:52px;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 12px;
+  transition: 1.5s;
+}
+
+.active, .accordion:hover {
+  
+}
+
+.panel {
+  padding: 0 13px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
 	
 	
 </head><body>
@@ -390,10 +417,17 @@ window.onclick = function(event) {
       </div>
       
     </div>
+    </div>
+</section> 
     
     
 
-    <div class="row experience-skill">
+<section class="skill" id="skill">
+  <div class="container"> 
+<button class="accordion"><h3> ☰   经验 <h3></button>
+<div class="panel">
+
+<div class="row experience-skill">
       
       
       <div class="col-lg-6 col-sm-6 col-11 experience wow fadeInUp" data-wow-duration="1.5s">
@@ -476,7 +510,16 @@ window.onclick = function(event) {
             <div class="skillbar" data-percent="85%">
               <div class="skillbar-bar"></div>
             </div>
-          </div>         
+          </div>   
+	 <div class="clearfix">
+            <span class="skillbar-title">时间管理</span>
+            <span class="skill-bar-percent">78%</span>
+            <div class="skillbar" data-percent="78%">
+              <div class="skillbar-bar"></div>
+            </div>
+          </div>
+		
+		
         </div>
       </div>
       
@@ -485,7 +528,22 @@ window.onclick = function(event) {
   </div>
 </section>
 
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
 
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script> 
 
 <section class="services" id="service">
 
