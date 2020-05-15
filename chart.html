@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="js/quan.min.js"></script>
+  <style>
+    .zc-body {
+      background-color: transparent;
+    }
+
+    .chart--container {
+      height: 330px;
+      width: 100%;
+      min-height: 300px;
+    }
+
+    .zc-ref {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="myChart" class="chart--container"></div>
+  <script>
+    ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
+    let chartConfig = {
+      theme: 'classic',
+      graphset: [{
+          type: 'hbar',
+          backgroundColor: 'transparent',
+          borderColor: 'transparent',
+          borderWidth: '2px',
+          height: '80%',
+          title: {
+            text: 'Location',
+            marginTop: '10px',
+            marginLeft: '20px',
+            backgroundColor: 'none',
+            fontSize: '18px',
+            shadow: false,
+            textAlign: 'left'
+          },
+          plot: {
+            barsOverlap: '100%',
+            barWidth: '17px',
+            thousandsSeparator: ',',
+            animation: {
+              effect: 'ANIMATION_SLIDE_BOTTOM'
+            }
+          },
+          plotarea: {
+            margin: '50px 25px 20px 25px'
+          },
+          scaleX: {
+            values: ['Thailand', 'India', 'Vietnam', 'Turkey','Lao PDR', 'United Kingdom'],
+            guide: {
+              visible: false
+            },
+            item: {
+              color: '#696969',
+              offsetX: '210px',
+              textAlign: 'left',
+              width: '200px'
+            },
+            lineColor: 'none',
+            tick: {
+              visible: false
+            }
+          },
+          scaleY: {
+            guide: {
+              visible: false
+            },
+            item: {
+              visible: false
+            },
+            lineColor: 'none',
+            tick: {
+              visible: false
+            }
+          },
+          series: [{
+              values: [75, 62, 84, 35, 20, 12],
+              tooltip: {
+                shadow: false
+              },
+              hoverState: {
+                visible: false
+              },
+              styles: [{
+                  backgroundColor: 'rgba(255,255,255,.85)'
+                },
+                {
+                  backgroundColor: 'rgba(255,255,255,.85)'
+                },
+                {
+                  backgroundColor: 'rgba(255,255,255,.85)'
+                },
+                {
+                  backgroundColor: 'rgba(255,255,255,.85)'
+                },
+				{
+                  backgroundColor: 'rgba(255,255,255,.85)'
+                },
+				{
+                  backgroundColor: 'rgba(255,255,255,.85)'
+                }
+              ],
+           
+              zIndex: 2
+            },
+            {
+              values: [75, 62, 84, 35, 20, 12],
+              valueBox: {   
+                fontColor: '#888888',
+                fontSize: '10px',
+                offsetX: '3px',
+                offsetY: '-1px',
+                placement: 'top-in',
+                textAlign: 'right',
+                visible: true
+              },
+              backgroundColor: 'transparent',
+			  borderColor: '#C8C8C8',
+              dataRvalues: [75, 62, 84, 35, 20, 12],
+              maxTrackers: 0,
+              zIndex: 1
+            }
+          ]
+        },
+        
+      ]
+    };
+
+    zingchart.render({
+      id: 'myChart',
+      data: chartConfig,
+      height: '100%',
+      width: '100%',
+    });
+  </script>
+</body>
+
+</html>
