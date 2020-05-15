@@ -7,8 +7,8 @@
   <style>
     .chart--container {
       min-height: 0px;
-      width: 400px;
-      height: 400px;
+      width: 300px;
+      height: 300px;
     }
 
     .zc-ref {
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <div id="myChart" class="chart--container">
+  <center><div id="myChart" class="chart--container"></center>
   </div>
   <script>
     ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
@@ -29,7 +29,7 @@
         borderWidth: '0px',
         item: {
           cursor: 'pointer',
-          fontSize: '15px',
+          fontSize: '10px',
           offsetX: '-5px'
         },
         layout: 'vertical',
@@ -43,7 +43,7 @@
       },
       plot: {
         detached: false, // turn off click on slices
-        slice: 110 // set hole size in middle of chart
+        slice: 83 // set hole size in middle of chart
       },
       tooltip: {
         visible: false
