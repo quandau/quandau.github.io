@@ -1,176 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>QUAN DAU</title>
-
-	<!-- stylesheets -->
-	<link href="assets/fonts/font-roboto.css" rel="stylesheet">
-	<link href="assets/bootstrap/bootstrap4-alpha3.min.css" rel="stylesheet">
-	<link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<link href="assets/web-analytics/style.css" rel="stylesheet">
-
-	<!-- scripts -->
-	<script src="assets/jquery/jquery-3.1.0.min.js"></script>
-	<script src="assets/tether/tether.min.js"></script>
-	<script src="assets/bootstrap/bootstrap4-alpha3.min.js"></script>
-	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-	<script src="assets/web-analytics/real-time.js"></script>
-
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <title>Quan DAU</title>
+  <!-- loader-->
+  <link href="assets/css/pace.min.css" rel="stylesheet"/>
+  <script src="assets/js/pace.min.js"></script>
+  <!--favicon-->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Vector CSS -->
+  <link href="assets/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet"/>
+  <!-- simplebar CSS-->
+  <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
+  <!-- Bootstrap core CSS-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- animate CSS-->
+  <link href="assets/css/animate.css" rel="stylesheet" type="text/css"/>
+  <!-- Icons CSS-->
+  <link href="assets/css/icons.css" rel="stylesheet" type="text/css"/>
+  <!-- Sidebar CSS-->
+  <link href="assets/css/sidebar-menu.css" rel="stylesheet"/>
+  <!-- Custom Style-->
+  <link href="assets/css/app-style.css" rel="stylesheet"/>
+  
 </head>
 
-<body>
-	<!-- header -->
-	<nav class="navbar navbar-fixed-top" id="header">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<div id="sidebar-toggle-button">
-					<i class="fa fa-bars" aria-hidden="true"></i>
-				</div>
-				<div class="brand">
-					<a href="http://quandau.com">
-						<span class="hidden-xs-down m-r-3">Home - QUAN DAU</span>
-					</a>
-				</div>
+<body class="bg-theme bg-theme1">
+ 
+<!-- Start wrapper-->
+ <div id="wrapper">
+ 
+  <!--Start sidebar-wrapper-->
+   <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
+     <div class="brand-logo">
+      <a href="http://quandau.com">
+       <img src="/images/logo.png" class="logo-icon" alt="logo icon">
+       <h5 class="logo-text">Quan DAU</h5>
+     </a>
+   </div>
+   <ul class="sidebar-menu do-nicescrol">
+     
+      <li>
+        <a href="http://quandau.com">
+          <i class="zmdi zmdi-view-dashboard"></i> <span>Homepage</span>
+        </a>
+      </li>
 
+
+   
+
+
+    </ul>
+   
+   </div>
+   <!--End sidebar-wrapper-->
+
+<!--Start topbar header-->
+<header class="topbar-nav">
+ <nav class="navbar navbar-expand fixed-top">
+  <ul class="navbar-nav mr-auto align-items-center">
+    <li class="nav-item">
+      <a class="nav-link toggle-menu" href="javascript:void();">
+       <i class="icon-menu menu-icon"></i>
+     </a>
+    </li>
+ 
+  </ul>
+     
+</nav>
+</header>
+<!--End topbar header-->
+
+<div class="clearfix"></div>
+	
+  <div class="content-wrapper">
+    <div class="container-fluid">
+
+  <!--Start Dashboard Content-->
+
+	<div class="card mt-3">
+    <div class="card-content">
+        <div class="row row-group m-0">
+            <div class="col-12 col-lg-6 col-xl-3 border-light">
+                <div class="card-body">
+                  <h5 class="text-white mb-0">Data Collection <span class="float-right"></span></h5>
+                    <div class="progress my-3" style="height:3px;">
+                       <div class="progress-bar" style="width:20%"></div>
+                    </div>
+                  <p class="mb-0 text-white small-font">In progress <span class="float-right">20% <i class="zmdi zmdi-long-arrow-up"></i></span></p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 border-light">
+                <div class="card-body">
+                  <h5 class="text-white mb-0">Literature Review <span class="float-right"></span></h5>
+                    <div class="progress my-3" style="height:3px;">
+                       <div class="progress-bar" style="width:40%"></div>
+                    </div>
+                  <p class="mb-0 text-white small-font">In progress <span class="float-right">40% <i class="zmdi zmdi-long-arrow-up"></i></span></p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 border-light">
+                <div class="card-body">
+                  <h5 class="text-white mb-0">Methodology <span class="float-right"></span></h5>
+                    <div class="progress my-3" style="height:3px;">
+                       <div class="progress-bar" style="width:25%"></div>
+                    </div>
+                  <p class="mb-0 text-white small-font">In progress <span class="float-right">25% <i class="zmdi zmdi-long-arrow-up"></i></span></p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 border-light">
+                <div class="card-body">
+                  <h5 class="text-white mb-0">Results <span class="float-right"><i class="fa fa-envira"></i></span></h5>
+                    <div class="progress my-3" style="height:3px;">
+                       <div class="progress-bar" style="width:0%"></div>
+                    </div>
+                  <p class="mb-0 text-white small-font">Not ready <span class="float-right">0% <i class="zmdi zmdi-long-arrow-up"></i></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>  
+	  
+	<div class="row">
+     <div class="col-12 col-lg-8 col-xl-8">
+	    <div class="card">
+		 <div class="card-header">Research Goals
+		   <div class="card-action">
+		   </div>
+		 </div>
+		 <div class="card-body">
+		    <ul class="list-inline">
+			  <li class="list-inline-item"><i class="fa fa-circle mr-2 text-white"></i>Publication Development</li>
+			  <li class="list-inline-item"><i class="fa fa-circle mr-2 text-light"></i>Methodology Development</li>
+			</ul>
+			<div class="chart-container-1">
+			  <canvas id="chart1"></canvas>
 			</div>
+		 </div>
+		 
+		 <div class="row m-0 row-group text-center border-top border-light-3">
+		   <div class="col-12 col-lg-4">
+		     <div class="p-3">
+		       <h5 class="mb-0">Data Analysis</h5>
+			   <small class="mb-0">New Metheology <span> <i class="fa fa-arrow-up"></i> 79%</span></small>
+		     </div>
+		   </div>
+		   <div class="col-12 col-lg-4">
+		     <div class="p-3">
+		       <h5 class="mb-0">Programming</h5>
+			   <small class="mb-0">Developed Modelling<span> <i class="fa fa-arrow-up"></i> 45%</span></small>
+		     </div>
+		   </div>
+		   <div class="col-12 col-lg-4">
+		     <div class="p-3">
+		       <h5 class="mb-0">Significance</h5>
+			   <small class="mb-0">Inovative Research <span> <i class="fa fa-arrow-up"></i> 65%</span></small>
+		     </div>
+		   </div>
+		 </div>
+		 
 		</div>
-	</nav>
-	<!-- /header -->
+	 </div>
 
-	<!-- sidebar -->
-	<div class="sidebar-toggle" id="sidebar">
-		<ul class="nav nav-sidebar">
+     <div class="col-12 col-lg-4 col-xl-4">
+        <div class="card">
+           <div class="card-header">Research Topic
+             <div class="card-action">
+          
+             </div>
+           </div>
+           <div class="card-body">
+		     <div class="chart-container-2">
+               <canvas id="chart2"></canvas>
+			  </div>
+           </div>
+           <div class="table-responsive">
+             <table class="table align-items-center">
+               <tbody>
+                 <tr>
+                   <td><i class="fa fa-circle text-white mr-2"></i> Hydrology</td>
+                   <td>80</td>
+                   <td>80%</td>
+                 </tr>
+                 <tr>
+                   <td><i class="fa fa-circle text-light-1 mr-2"></i>Climate Change</td>
+                   <td>75</td>
+                   <td>75%</td>
+                 </tr>
+                 <tr>
+                   <td><i class="fa fa-circle text-light-2 mr-2"></i>Modelling</td>
+                   <td>95</td>
+                   <td>85%</td>
+                 </tr>
+                 <tr>
+                   <td><i class="fa fa-circle text-light-3 mr-2"></i>Optimisation</td>
+                   <td>35</td>
+                   <td>45%</td>
+                 </tr>
+               </tbody>
+             </table>
+           </div>
+         </div>
+     </div>
+	</div><!--End Row-->
+	
+	<div class="row">
+	 <div class="col-12 col-lg-12">
+	   <div class="card">
+	     <div class="card-header">Activities
+		  <div class="card-action">
+             </div>
+		 </div>
+	       <div class="table-responsive">
+                 <table class="table align-items-center table-flush table-borderless">
+                  <thead>
+                   <tr>
+                     <th>Data Collection</th>
+                     <th>Photo</th>
+                     <th>Date</th>
+                     <th>Progress</th>
+                   </tr>
+                   </thead>
+                   <tbody><tr>
+                    <td>Meteological Data</td>
+                    <td><img src="https://via.placeholder.com/110x110" class="product-img" alt="product img"></td>
+                   
+                    <td>20 May 2020</td>
+					<td><div class="progress shadow" style="height: 3px;">
+                          <div class="progress-bar" role="progressbar" style="width: 10%"></div>
+                        </div></td>
+                   </tr>
+
+                   <tr>
+                    <td>Streamflow Data</td>
+                    <td><img src="https://via.placeholder.com/110x110" class="product-img" alt="product img"></td>
+             
+                    <td>20 May 2020</td>
+					<td><div class="progress shadow" style="height: 3px;">
+                          <div class="progress-bar" role="progressbar" style="width: 20%"></div>
+                        </div></td>
+                   </tr>
+
+                   <tr>
+                    <td>Topographic Data</td>
+                    <td><img src="https://via.placeholder.com/110x110" class="product-img" alt="product img"></td>
+       
+                    <td>20 May 2020</td>
+					<td><div class="progress shadow" style="height: 3px;">
+                          <div class="progress-bar" role="progressbar" style="width: 40%"></div>
+                        </div></td>
+                   </tr>
+
+                   <tr>
+                    <td>Reservoir Bathymetric</td>
+                    <td><img src="https://via.placeholder.com/110x110" class="product-img" alt="product img"></td>
+             
+                    <td>20 May 2020</td>
+					<td><div class="progress shadow" style="height: 3px;">
+                          <div class="progress-bar" role="progressbar" style="width: 25%"></div>
+                        </div></td>
+                   </tr>
+
+                   <tr>
+                    <td>Irrigation Scheduling</td>
+                    <td><img src="https://via.placeholder.com/110x110" class="product-img" alt="product img"></td>
+            
+                    <td>20 May 2020</td>
+					<td><div class="progress shadow" style="height: 3px;">
+                          <div class="progress-bar" role="progressbar" style="width: 15%"></div>
+                        </div></td>
+                   </tr>
+				   
+				   <tr>
+                    <td>Social-economic Data</td>
+                    <td><img src="https://via.placeholder.com/110x110" class="product-img" alt="product img"></td>
+            
+                    <td>20 May 2020</td>
+					<td><div class="progress shadow" style="height: 3px;">
+                          <div class="progress-bar" role="progressbar" style="width: 52%"></div>
+                        </div></td>
+                   </tr>
+
+                 </tbody></table>
+               </div>
+	   </div>
+	 </div>
+	</div><!--End Row-->
+
+      <!--End Dashboard Content-->
+	  
+	<!--start overlay-->
+		  <div class="overlay toggle-menu"></div>
+		<!--end overlay-->
 		
-			
-				<a href="http://quandau.com">
-					<img border="0" alt="logo" src="/images/logo.png" width="100%" height="100%">
-					
-				</a>
-			
-		
-			<li>
-				<a href="http://quandau.com/visualisation" class="active">
-					<i class="fa fa-clock-o fa-lg fa-fw" aria-hidden="true"></i>
-					<span>Up-to-date</span>
-				</a>
-			</li>
-			<li role="separator" class="divider"></li>
-			<li>
-				<a href="http://quandau.com">
-					<i class="fa fa-newspaper-o fa-lg fa-fw" aria-hidden="true"></i>
-					<span>Homepage</span>
-				</a>
-			</li>
-			<li>
-				<a href="http://quandau.com/academic">
-					<i class="fa fa-newspaper-o fa-lg fa-fw" aria-hidden="true"></i>
-					<span>Gallery</span>
-				</a>
-			</li>
-				<li>
-				<a href="http://quandau.com/gis">
-					<i class="fa fa-newspaper-o fa-lg fa-fw" aria-hidden="true"></i>
-					<span>GIS  System</span>
-				</a>
-			</li>
-				</li>
-				<li>
-				<a href="http://quandau.com/gui">
-					<i class="fa fa-newspaper-o fa-lg fa-fw" aria-hidden="true"></i>
-					<span>GUI Development</span>
-				</a>
-			</li>
-			</li>
-				<li>
-				<a href="http://quandau.com/#contact">
-					<i class="fa fa-newspaper-o fa-lg fa-fw" aria-hidden="true"></i>
-					<span>Contact Me</span>
-				</a>
-			</li>
-		
-			<li role="separator" class="divider"></li>
-		</ul>
-	</div>
-	<!-- /sidebar -->
+    </div>
+    <!-- End container-fluid-->
+    
+    </div><!--End content-wrapper-->
+   <!--Start Back To Top Button-->
+    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+    <!--End Back To Top Button-->
+	
+	<!--Start footer-->
+	<footer class="footer">
+      <div class="container">
+        <div class="text-center">
+          Copyright © 2020 QUAN DAU
+        </div>
+      </div>
+    </footer>
+	<!--End footer-->
+	
+  <!--start color switcher-->
+   <div class="right-sidebar">
+    <div class="switcher-icon">
+      <i class="zmdi zmdi-settings zmdi-hc-spin"></i>
+    </div>
+    <div class="right-sidebar-content">
 
-	<!-- page-content-wrapper -->
-	<div class="page-content-toggle" id="page-content-wrapper">
-		<div class="container-fluid">
+      <p class="mb-0">Gaussion Texture</p>
+      <hr>
+      
+      <ul class="switcher">
+        <li id="theme1"></li>
+        <li id="theme2"></li>
+        <li id="theme3"></li>
+        <li id="theme4"></li>
+        <li id="theme5"></li>
+        <li id="theme6"></li>
+      </ul>
 
-			<!-- 1st row -->
-			<div class="row m-b-2">
-				<div class="col-lg-4">
-					<div class="card card-block">
-						<h4 class="card-title">Contribution</h4>
-						<div id="users-device-doughnut-chart"></div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="card card-block">
-						<h4 class="card-title">Research Topic</h4>
-						<div id="users-medium-pie-chart"></div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="card card-block">
-						<h4 class="card-title">Data Analytic</h4>
-						<div id="users-category-pie-chart"></div>
-					</div>
-				</div>
-			</div>
-			<!-- /1st row -->
+      <p class="mb-0">Gradient Background</p>
+      <hr>
+      
+      <ul class="switcher">
+        <li id="theme7"></li>
+        <li id="theme8"></li>
+        <li id="theme9"></li>
+        <li id="theme10"></li>
+        <li id="theme11"></li>
+        <li id="theme12"></li>
+		<li id="theme13"></li>
+        <li id="theme14"></li>
+        <li id="theme15"></li>
+      </ul>
+      
+     </div>
+   </div>
+  <!--end color switcher-->
+   
+  </div><!--End wrapper-->
 
+  <!-- Bootstrap core JavaScript-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+	
+ <!-- simplebar js -->
+  <script src="assets/plugins/simplebar/js/simplebar.js"></script>
+  <!-- sidebar-menu js -->
+  <script src="assets/js/sidebar-menu.js"></script>
+  <!-- loader scripts -->
+  <script src="assets/js/jquery.loading-indicator.js"></script>
+  <!-- Custom scripts -->
+  <script src="assets/js/app-script.js"></script>
+  <!-- Chart js -->
+  
+  <script src="assets/plugins/Chart.js/Chart.min.js"></script>
+ 
+  <!-- Index js -->
+  <script src="assets/js/index.js"></script>
 
-			<!-- 2rd row -->
-			<div class="row">
-				<div class="col-md-6">
-					<div class="card card-block">
-						<h4 class="card-title m-b-1">Citations by year (Google Scholar)</h4>
-						<div id="h-index-bar-chart"></div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="card card-block">
-						<h4 class="card-title m-b-1">Research Location</h4>
-						<div id="users-state-bar-chart"></div>
-					</div>
-				</div>
-			</div>
-			<!-- /4rd row -->
-			
-			<br>
-			<br>
-			<br>
-			
-			<!-- 3nd row -->
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="card card-block">
-						<h4 class="card-title m-b-1"> </h4>
-						<div id="page-views-per-minute-column-chart"></div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="card card-block">
-						<h4 class="card-title m-b-1"> </h4>
-						<div id="page-views-per-second-column-chart"></div>
-					</div>
-				</div>
-			</div>
-			<!-- /3nd row -->
-		
-
-		</div>
-		<!-- /.container-fluid -->
-
-	</div>
-	<!-- /page-content-wrapper -->
-
+  
 </body>
-
 </html>
