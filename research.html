@@ -5,174 +5,70 @@
   <meta charset="utf-8">
   <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
   <style>
-    @import 'https://fonts.googleapis.com/css?family=Montserrat';
-    @import 'https://fonts.googleapis.com/css?family=Lato:400';
     .chart--container {
-      height: 200px;
-      width: 510px;
-      min-height: 400px;
-	   background: white;
+      min-height: 530px;
+      width: 500px;
+      height: 400px;
     }
-    .zc-body {
-      background: white;
+
+    .zc-ref {
       display: none;
     }
   </style>
 </head>
 
 <body>
-  <div id="myChart" class="chart--container"><a class="zc-ref" href=""></a></div>
+  <div id="myChart" class="chart--container">
+  </div>
   <script>
     ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
     let chartConfig = {
-      gui: {
-        contextMenu: {
-          backgroundColor: 'white', // sets background for entire contextMenu
-          button: {
-            backgroundColor: 'white',
-            lineColor: 'white',
-            visible: true
-          },
-          docked: true,
-          gear: {
-            alpha: 1,
-            backgroundColor: 'white'
-          },
-          item: {
-            backgroundColor: '#306EAA',
-            borderColor: '#306EAA',
-            borderWidth: '0px',
-            color: '#fff',
-            fontFamily: 'Lato'
-          },
-          position: 'right'
-        }
+      type: 'ring',
+      legend: {
+        align: 'center',
+        borderWidth: '0px',
+        item: {
+          cursor: 'pointer',
+          fontSize: '15px',
+          offsetX: '-5px'
+        },
+        layout: 'vertical',
+        marker: {
+          type: 'circle',
+          cursor: 'pointer',
+          size: '10px'
+        },
+        toggleAction: 'remove', // remove plot so it re-calculates percentage
+        verticalAlign: 'middle'
       },
-      graphset: [{
-        type: 'ring',
-        backgroundColor: 'white',
-
-        legend: {
-          adjustLayout: true,
-          align: 'center',
-          backgroundColor: 'white',
-          borderWidth: '0px',
-          item: {
-            cursor: 'pointer',
-            fontColor: '#777',
-            fontSize: '10px',
-            offsetX: '-6px'
-          },
-          marker: {
-            type: 'circle',
-            borderWidth: '0px',
-            cursor: 'pointer',
-            size: 5
-          },
-          mediaRules: [{
-            maxWidth: '500px',
-            visible: false
-          }],
-          toggleAction: 'remove',
-          verticalAlign: 'bottom'
+      plot: {
+        detached: false, // turn off click on slices
+        slice: 150 // set hole size in middle of chart
+      },
+      tooltip: {
+        visible: false
+      },
+      series: [{
+          values: [90],
+		  text: 'Hydrology',
+          backgroundColor: '#FE7A5D'
         },
-        plot: {
-          valueBox: [{
-              type: 'all',
-              text: '%t',
-              placement: 'out'
-            },
-            {
-              type: 'all',
-              text: '%npv%',
-              placement: 'in'
-            }
-          ],
-          animation: {
-            effect: 'ANIMATION_EXPAND_VERTICAL',
-            sequence: 'ANIMATION_BY_PLOT_AND_NODE'
-          },
-          backgroundColor: 'white',
-          borderWidth: '0px',
-          hoverState: {
-            cursor: 'hand',
-          },
-          slice: '60%'
+        {
+          values: [85],
+		  text: 'Climate Change',
+          backgroundColor: '#69A8F8'
         },
-        plotarea: {
-          margin: '70px 0px 10px 0px',
-          backgroundColor: 'transparent',
-          borderRadius: '10px',
-          borderWidth: '0px'
+        {
+          values: [95],
+		  text: 'Modelling',
+          backgroundColor: '#54DBB9'
         },
-        scaleR: {
-          refAngle: 270
-        },
-        tooltip: {
-          text: '<span style="color:%color">Page Url: %t</span><br><span style="color:%color">Pageviews: %v</span>',
-          anchor: 'c',
-          backgroundColor: 'none',
-          borderWidth: '0px',
-          fontSize: '10px',
-          mediaRules: [{
-            maxWidth: '500px',
-            y: '54%'
-          }],
-          sticky: true,
-          thousandsSeparator: ',',
-          x: '50%',
-          y: '50%'
-        },
-        noData: {
-          text: 'No Selection',
-          alpha: .6,
-          backgroundColor: '#20b2db',
-          bold: true,
-          fontSize: '10px',
-          textAlpha: .9
-        },
-        series: [{
-            text: 'Hydrology',
-            values: [8],
-            backgroundColor: '#00BAF2',
-            lineColor: '#00BAF2',
-            lineWidth: '1px',
-            marker: {
-              backgroundColor: '#00BAF2'
-            }
-          },
-          {
-            text: 'Climate Change',
-            values: [6],
-            backgroundColor: '#ffbf00',
-            lineColor: '#ffbf00',
-            lineWidth: '1px',
-            marker: {
-              backgroundColor: '#ffbf00'
-            }
-          },
-		  {
-            text: 'Modelling',
-            values: [10],
-            backgroundColor: '#E80C60',
-            lineColor: '#E80C60',
-            lineWidth: '1px',
-            marker: {
-              backgroundColor: '#E80C60'
-            }
-          },
-          {
-            text: 'Optimisation',
-            values: [4],
-            backgroundColor: '#9B26AF',
-            lineColor: '#9B26AF',
-            lineWidth: '1px',
-            marker: {
-              backgroundColor: '#9B26AF'
-            }
-          }
-        ]
-      }]
+        {
+          values: [70],
+		  text: 'Optimisation',
+          backgroundColor: '#FEDA60'
+        }
+      ]
     };
 
     zingchart.render({
@@ -181,6 +77,22 @@
       height: '100%',
       width: '100%',
     });
+
+    /*
+     * Every 35 milliseconds we will update the chart
+     * angle by 1.5 degress so it simulates rotatition
+     * animation! 
+     */
+    let angle = 0;
+    setInterval(function() {
+      angle = angle + 1.5;
+      zingchart.exec('myChart', 'modify', {
+        object: 'plot',
+        data: {
+          refAngle: angle % 360
+        }
+      });
+    }, 35);
   </script>
 </body>
 
