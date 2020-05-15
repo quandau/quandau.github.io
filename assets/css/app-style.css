@@ -348,10 +348,10 @@ hr {
 }
 
 .switcher-icon{
-	width: 40px;
+	width: 100px;
     height: 40px;
 	line-height:40px;
-    background: #000;
+    background: red;
 	text-align:center;
 	font-size:22px;
 	color:#fff;
