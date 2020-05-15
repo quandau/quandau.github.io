@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+  <style>
+    @import 'https://fonts.googleapis.com/css?family=Montserrat';
+    @import 'https://fonts.googleapis.com/css?family=Lato:400';
+    .chart--container {
+      height: 200px;
+      width: 510px;
+      min-height: 400px;
+    }
+
+    .zc-ref {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="myChart" class="chart--container"><a class="zc-ref" href=""></a></div>
+  <script>
+    ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
+    let chartConfig = {
+      gui: {
+        contextMenu: {
+          backgroundColor: 'white', // sets background for entire contextMenu
+          button: {
+            backgroundColor: 'white',
+            lineColor: '#2D66A4',
+            visible: true
+          },
+          docked: true,
+          gear: {
+            alpha: 1,
+            backgroundColor: '#2D66A4'
+          },
+          item: {
+            backgroundColor: '#306EAA',
+            borderColor: '#306EAA',
+            borderWidth: '0px',
+            color: '#fff',
+            fontFamily: 'Lato'
+          },
+          position: 'right'
+        }
+      },
+      graphset: [{
+        type: 'ring',
+        backgroundColor: '#FBFCFE',
+
+        legend: {
+          adjustLayout: true,
+          align: 'center',
+          backgroundColor: '#FBFCFE',
+          borderWidth: '0px',
+          item: {
+            cursor: 'pointer',
+            fontColor: '#777',
+            fontSize: '10px',
+            offsetX: '-6px'
+          },
+          marker: {
+            type: 'circle',
+            borderWidth: '0px',
+            cursor: 'pointer',
+            size: 5
+          },
+          mediaRules: [{
+            maxWidth: '500px',
+            visible: false
+          }],
+          toggleAction: 'remove',
+          verticalAlign: 'bottom'
+        },
+        plot: {
+          valueBox: [{
+              type: 'all',
+              text: '%t',
+              placement: 'out'
+            },
+            {
+              type: 'all',
+              text: '%npv%',
+              placement: 'in'
+            }
+          ],
+          animation: {
+            effect: 'ANIMATION_EXPAND_VERTICAL',
+            sequence: 'ANIMATION_BY_PLOT_AND_NODE'
+          },
+          backgroundColor: '#FBFCFE',
+          borderWidth: '0px',
+          hoverState: {
+            cursor: 'hand',
+          },
+          slice: '60%'
+        },
+        plotarea: {
+          margin: '70px 0px 10px 0px',
+          backgroundColor: 'transparent',
+          borderRadius: '10px',
+          borderWidth: '0px'
+        },
+        scaleR: {
+          refAngle: 270
+        },
+        tooltip: {
+          text: '<span style="color:%color">Page Url: %t</span><br><span style="color:%color">Pageviews: %v</span>',
+          anchor: 'c',
+          backgroundColor: 'none',
+          borderWidth: '0px',
+          fontSize: '10px',
+          mediaRules: [{
+            maxWidth: '500px',
+            y: '54%'
+          }],
+          sticky: true,
+          thousandsSeparator: ',',
+          x: '50%',
+          y: '50%'
+        },
+        noData: {
+          text: 'No Selection',
+          alpha: .6,
+          backgroundColor: '#20b2db',
+          bold: true,
+          fontSize: '10px',
+          textAlpha: .9
+        },
+        series: [{
+            text: 'Hydrology',
+            values: [8],
+            backgroundColor: '#00BAF2',
+            lineColor: '#00BAF2',
+            lineWidth: '1px',
+            marker: {
+              backgroundColor: '#00BAF2'
+            }
+          },
+          {
+            text: 'Climate Change',
+            values: [6],
+            backgroundColor: '#ffbf00',
+            lineColor: '#ffbf00',
+            lineWidth: '1px',
+            marker: {
+              backgroundColor: '#ffbf00'
+            }
+          },
+		  {
+            text: 'Modelling',
+            values: [10],
+            backgroundColor: '#E80C60',
+            lineColor: '#E80C60',
+            lineWidth: '1px',
+            marker: {
+              backgroundColor: '#E80C60'
+            }
+          },
+          {
+            text: 'Optimisation',
+            values: [4],
+            backgroundColor: '#9B26AF',
+            lineColor: '#9B26AF',
+            lineWidth: '1px',
+            marker: {
+              backgroundColor: '#9B26AF'
+            }
+          }
+        ]
+      }]
+    };
+
+    zingchart.render({
+      id: 'myChart',
+      data: chartConfig,
+      height: '100%',
+      width: '100%',
+    });
+  </script>
+</body>
+
+</html>
