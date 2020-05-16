@@ -78,6 +78,36 @@ body {font-family: Arial, Helvetica, sans-serif;}
   cursor: pointer;
 }
 </style>	
+<style>
+.accordion {
+
+  color: #444;
+  cursor: pointer;
+  padding: 13px;
+  width: 100%;
+  height:52px;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 12px;
+  transition: 1.5s;
+}
+
+.active, .accordion:hover {
+  
+}
+
+.panel {
+  padding: 0 13px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.exp{
+width: 75px;
+height:43px;}		
+</style>	
 	
 </head><body>
 <!-- preloader start -->
@@ -313,10 +343,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
       <div class="col-lg-6 col-md-6 col-sm-6 about-me-text d-flex align-self-center">
         <div class="text-holder wow fadeInUp" data-wow-duration="1.5s">
           <h1> Về Bản Thân</h1>
-          <p>Tôi tốt nghiệp học vị thạc sĩ tại trường Đại Học MSU-Iligan Institute of Technology năm 2013 and tiến sĩ tại trường Đại Học Khon Kaen năm 2017. Nghiên cứu của tôi liên quan đến các lĩnh vực khoa học về tài nguyên nước và biến đổi khí hậu </p>
+          <p>Tôi tốt nghiệp học vị thạc sĩ tại trường Đại Học MSU-Iligan Institute of Technology năm 2013 and tiến sĩ tại trường Đại Học Khon Kaen năm 2017. Sau đó, tôi làm việc nghiên cứu sau tiến sĩ tại trường Đại Học Heriot-Watt Vương Quốc Anh từ tháng 2 năm 2018 đến tháng 4 năm 2020.   </p>
           <h5>LĨNH VỰC CHUYÊN SÂU</h5>
-          <p> Tôi chủ yếu nghiên cứu về các tính chất thủy văn, quản lý tài nguyên nước, ước tính chất lượng nước và khối lượng có sẵn, sử dụng hình ảnh vệ tinh để phân tích dữ liệu, tôi thường sử dụng mạng lưới thần kinh nhân tạo để dự đoán trong tương lai, phát triển các phương pháp để đối phó với biến đổi khí hậu, quản lý nước một cách hiệu quả cho nông nghiệp, dự báo kinh tế xã hội thay đổi theo thời gian, hiểu biết về cách vận hành & tối ưu hóa hồ chứa - thủy điện, ứng dụng các mô hình thủy văn, chuyên về các ứng phó với thiên tai (lũ lụt / hạn hán) và phân tích các rủi ro có thể xảy ra.</p>
-         
+          <p> Nghiên cứu của tôi liên quan đến các lĩnh vực khoa học về tài nguyên nước và biến đổi khí hậu. Chủ yếu, tôi nghiên cứu về các tính chất thủy văn, quản lý tài nguyên nước, ước tính chất lượng nước và khối lượng có sẵn, sử dụng hình ảnh vệ tinh để phân tích dữ liệu, tôi thường sử dụng mạng lưới thần kinh nhân tạo để dự đoán trong tương lai, phát triển các phương pháp để đối phó với biến đổi khí hậu, quản lý nước một cách hiệu quả cho nông nghiệp, dự báo kinh tế xã hội thay đổi theo thời gian, hiểu biết về cách vận hành & tối ưu hóa hồ chứa - thủy điện, ứng dụng các mô hình thủy văn, chuyên về các ứng phó với thiên tai (lũ lụt / hạn hán) và phân tích các rủi ro có thể xảy ra.</p>
+    
 	<!-- Trigger/Open The Modal -->
 <button id="myBtn">Tải Hồ Sơ Cá Nhân</button>
 
@@ -326,6 +356,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   <div class="modal-content">
     <span class="close">&times;</span>
     <p>Thành thật thứ lỗi ! Hồ sơ của Quân hiện tại chưa có sẵn trên trang Web này:(   </p>
+	  <p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://media.tenor.com/images/092ac0669c86bf9320fdd1d935b1320f/tenor.gif" alt="" width="239" height="148" /></p>
   </div>
 
 </div>
@@ -357,6 +388,7 @@ window.onclick = function(event) {
   }
 }
 </script>		
+	
 		
 		
 		
@@ -374,19 +406,35 @@ window.onclick = function(event) {
       
     </div>
     
-    
+     </div>
+    </div>
+</section> 
+   
 
-    <div class="row experience-skill">
+ <section class="skill" id="skill">
+  <div class="container"> 
+<button class="accordion"><h3> ☰     KINH NGHIỆM   <img class="exp" src="http://quandau.com/images/book.gif" alt=""><h3></button>
+<div class="panel">
+
+<div class="row experience-skill">
       
       
       <div class="col-lg-6 col-sm-6 col-11 experience wow fadeInUp" data-wow-duration="1.5s">
         <h3>Kinh Nghiệm</h3>
         <ul class="experience-chart">
-          
+                    <li>
+            <div class="single-experience">
+              <h4>Học Viện INRA<em>e</em> | PHÁP </h4>
+               <span>Nghiên Cứu Sau Tiến Sĩ</span> 
+               <span>2020-2022</span> 
+               <p>Nghiên cứu của tôi nhằm phát triển một mô hình tối ưu hóa hệ thống đập thủy điện ở sông Seine của Pháp nhằm giảm nguy cơ lũ lụt cũng như hạn hán đến thành phố Paris và các vùng lân cận  </p> 
+            </div>
+          </li>
+		
           <li>
             <div class="single-experience">
-              <h4>Nghiên cứu sau Tiến sĩ | Vương Quốc Anh</h4>
-               <span>Đại Học Heriot-Watt</span> 
+              <h4>Đại Học Heriot-Watt | VƯƠNG QUỐC ANH</h4>
+               <span>Nghiên Cứu Sau Tiến Sĩ</span> 
                <span>2018-2020</span> 
                <p>Tôi làm việc trong các lĩnh vực nghiên cứu về các tác động của sự biến đổi khí hâu cùng với phát triển kinh tế xá hội tới hệ thống tài nguyên nước, tối ưu hóa nhà máy thủy điện nhằm tăng năng suất trong việc vận hành, ứng dụng các mô hình thủy văn - thủy lực để tính toán dòng chảy, phân tích các giải pháp để ứng phó với thiên tai. Đặc biệt tôi đã phát triển một mô hình <a href="http://quandau.com/gui">[GUI]</a> cho việc tối ưu hóa nhiều đập thủy điện cùng lúc.  </p> 
             </div>
@@ -394,8 +442,8 @@ window.onclick = function(event) {
           
           <li>
             <div class="single-experience">
-              <h4>Trợ lý nghiên cứu | Thái Lan </h4>
-               <span>Học Viện Tài Nguyên và Môi Trường</span> 
+              <h4>Đại Học Khon Kaen | THAILAND </h4>
+               <span>Trợ Lý Nghiên Cứu</span> 
                <span>2016-2017</span> 
                <p>Tôi làm việc trong các lĩnh vực về biến đổi khí hậu, ứng phó với thiên tai, áp dụng các mô hình thủy văn và thủy lực để tính toán các dòng chảy và tác động của thiên tai ở Thái Lan. Tôi cũng từng làm việc trong các dự án của UNESCO về việc biến đổi khí hậu cho 5 nước khu vực sông Mê Kông</p> 
             </div>
@@ -403,13 +451,20 @@ window.onclick = function(event) {
           
           <li>
             <div class="single-experience">
-              <h4>Trợ lý Kỹ Sư |Philippines</h4>
-               <span>Gerona Enterprise</span> 
+              <h4>Gerona Enterprise | PHILIPPINES</h4>
+               <span>Kỹ Sư</span> 
                <span>2012-2013</span> 
                <p>Tôi làm việc trong bộ phận thiết kế cấu trúc nhà ở, cầu đường, và các công trình thủy lợi tại miền nam, Phillippines</p> 
             </div>
           </li>
-          
+            <li>
+            <div class="single-experience">
+              <h4>Công ty CDG | VIETNAM</h4>
+               <span>Thiết Kế Website</span> 
+               <span>2010-2011</span> 
+               <p>Công việc chính của tôi là thiết kế hơn 200 giao diện Website cho khách hàng. Tôi cũng làm việc trong việc thiết kế đồ họa, hiệu ứng, và các quảng cáo cho khách hàng.</p> 
+            </div>
+          </li>        
         </ul>
       </div>
       
@@ -431,7 +486,7 @@ window.onclick = function(event) {
           
           <div class="clearfix">
             <span class="skillbar-title">Mô Hình Toán Học</span>
-            <span class="skill-bar-percent">80%</span>
+            <span class="skill-bar-percent">75%</span>
             <div class="skillbar" data-percent="80%">
               <div class="skillbar-bar"></div>
             </div>
@@ -446,8 +501,8 @@ window.onclick = function(event) {
           </div>
           
           <div class="clearfix">
-            <span class="skillbar-title">MATLAB và R</span>
-            <span class="skill-bar-percent">80%</span>
+            <span class="skillbar-title">lập Trình</span>
+            <span class="skill-bar-percent">65%</span>
             <div class="skillbar" data-percent="80%">
               <div class="skillbar-bar"></div>
             </div>
@@ -460,16 +515,47 @@ window.onclick = function(event) {
               <div class="skillbar-bar"></div>
             </div>
           </div>
+        <div class="clearfix">
+            <span class="skillbar-title">Quản Lý Thời Gian</span>
+            <span class="skill-bar-percent">78%</span>
+            <div class="skillbar" data-percent="78%">
+              <div class="skillbar-bar"></div>
+            </div>
+          </div>
+		
+	<iframe src="http://quandau.com/research" 
+        style="border: 0px solid black; width: 100%; height: 340px;">
+         </iframe>   
           
         </div>
       </div>
-      
+
+  <iframe src="http://quandau.com/skill" 
+        style="border: 0px solid black; width: 100%; height: 580px;">
+</iframe>   
       
     </div>
   </div>
+		
+	
 </section>
 
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
 
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script> 
 
 <section class="services" id="service">
   
@@ -480,14 +566,14 @@ window.onclick = function(event) {
         <div class="wow fadeInUp" data-wow-duration="1.5s">
           <div class="services-heading">
             <div class="bar"></div>
-            <h1>CÁC PHÁT TRIỂN</h1>
+            <h1>Những Phát Triển Khác</h1>
           </div>
           <div class="row">
             
             <div class="col-lg-4 col-sm-4 col-12 services-icon">
               <div class="service-img" >
 		   <a href="http://quandau.com/visualisation">   
-                <img class="img-fluid" src="/images/icons/web-development.png" alt="Programming">
+                <img class="img-fluid" src="http://quandau.com/images/icons/web-development.png" alt="Programming">
 		      <a href="http://quandau.com/visualisation" class="download-cv hvr-icon-hang"></a>   
               </div>
               <div class="service-label">Xử Lý Dữ Liệu</div>
@@ -496,7 +582,7 @@ window.onclick = function(event) {
             <div class="col-lg-4 col-sm-4 col-12 services-icon">
               <div class="service-img" >
 		       <a href="http://quandau.com/gis">  
-                <img class="img-fluid" src="/images/icons/graphic-design.png" alt="Geographical Information System">
+                <img class="img-fluid" src="http://quandau.com/images/icons/graphic-design.png" alt="Geographical Information System">
 		       <a href="http://quandau.com/gis" class="download-cv hvr-icon-hang"></a>   
               </div>
               <div class="service-label">Hệ Thống GIS</div>
@@ -505,7 +591,7 @@ window.onclick = function(event) {
             <div class="col-lg-4 col-sm-4 col-12 services-icon">
               <div class="service-img" >
 		       <a href="http://quandau.com/climate">  
-                <img class="img-fluid" src="/images/icons/dbms.png" alt="Climate Database">
+                <img class="img-fluid" src="http://quandau.com/images/icons/dbms.png" alt="Climate Database">
 			          <a href="http://quandau.com/climate" class="download-cv hvr-icon-hang"></a>   
               </div>
               <div class="service-label">Dữ Liệu Khí Hậu</div>
@@ -513,7 +599,9 @@ window.onclick = function(event) {
             
             <div class="col-lg-4 col-sm-4 col-12 services-icon">
               <div class="service-img" >
-                <img class="img-fluid" src="/images/icons/software-development.png" alt="Modelling">
+		      <a href="http://quandau.com/model">  
+                <img class="img-fluid" src="http://quandau.com/images/icons/software-development.png" alt="Modelling">
+		  <a href="http://quandau.com/model" class="download-cv hvr-icon-hang"></a>  
               </div>
               <div class="service-label">Mô Hình</div>
             </div>
@@ -521,7 +609,7 @@ window.onclick = function(event) {
             <div class="col-lg-4 col-sm-4 col-12 services-icon">
               <div class="service-img" >
 		            <a href="http://quandau.com/gui">   
-                <img class="img-fluid" src="/images/icons/marketing.png" alt="Research Outcomes">
+                <img class="img-fluid" src="http://quandau.com/images/icons/marketing.png" alt="Research Outcomes">
 		      <a href="http://quandau.com/gui" class="download-cv hvr-icon-hang"></a>    
               </div>
               <div class="service-label">Phát Triển GUI</div>
@@ -529,9 +617,11 @@ window.onclick = function(event) {
             
             <div class="col-lg-4 col-sm-4 col-12 services-icon">
               <div class="service-img" >
-                <img class="img-fluid" src="/images/icons/mobile-app.png" alt="Resources">
+		      <a href="http://quandau.com/link">   
+                <img class="img-fluid" src="http://quandau.com/images/icons/mobile-app.png" alt="Resources">
+		 <a href="http://quandau.com/link" class="download-cv hvr-icon-hang"></a>  
               </div>
-              <div class="service-label">Công Trình Thiết Kế</div>
+              <div class="service-label">Liên Kết</div>
             </div>
             
           </div>
@@ -540,7 +630,7 @@ window.onclick = function(event) {
     </div>
   </div>
   
-</section> 
+</section>  
 
   
   <section class="gallery" id="gallery">
@@ -692,7 +782,7 @@ window.onclick = function(event) {
           
           <div class="fun-fact-holder">
             <img class="img-fluid" src="/images/icons/happy.png" alt="PUBLICATIONS UNDER REVIEW">
-            <p class="fact-counter count" data-count="4">0</p>
+            <p class="fact-counter count" data-count="5">0</p>
             <p>BÁO ĐANG DUYỆT</p>
           </div>
 
