@@ -8,7 +8,7 @@
     .chart--container {
       min-height: 0px;
       width: 330px;
-      height: 310px;
+      height: 320px;
     }
 
     .zc-ref {
@@ -24,12 +24,15 @@
     ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
     let chartConfig = {
       type: 'ring',
+	  backgroundColor:'mintcream',
       legend: {
         align: 'center',
+		backgroundColor:'mintcream',
         borderWidth: '0px',
         item: {
           cursor: 'pointer',
           fontSize: '9px',
+		 
           offsetX: '-1px'
         },
         layout: 'vertical',
@@ -43,7 +46,7 @@
       },
       plot: {
         detached: false, // turn off click on slices
-        slice: 77 // set hole size in middle of chart
+        slice: 78 // set hole size in middle of chart
       },
       tooltip: {
         visible: false
