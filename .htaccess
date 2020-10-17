@@ -24,3 +24,8 @@ AddOutputFilterByType DEFLATE image/svg+xml
    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*)\ HTTP/
    RewriteRule .* %1.html [L]
 </IfModule>
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^(www\.)?quandau\.com$ [NC]
+RewriteRule ^(.*)$ https://www.quandau.com/$1 [L,R=301]
