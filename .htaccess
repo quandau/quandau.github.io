@@ -1,3 +1,4 @@
+Header always append X-Frame-Options SAMEORIGIN
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
