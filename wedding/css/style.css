@@ -592,7 +592,7 @@ ul .other-menu-2 {
 	overflow-x: hidden;
 }
 .bg-main-image-overlay-fixed {
-	background-color: rgba(255,255,255,0.6);
+	background-color: rgba(255,255,255,0.75);
 	width: 100%;
 	position: fixed;
 	height: 100%;
@@ -730,11 +730,13 @@ ul .other-menu-2 {
 }
 .groom-color {
 	background-color: 'transparent';
-	color: darkred;
+	color: black;
+	font-size: large;
 }
 .bride-color {
 	background-color: 'transparent';
-	color: darkred;
+	color: black;
+	font-size: large;
 }
 .the-couple {
 	width: 100%;
