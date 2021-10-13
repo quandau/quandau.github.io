@@ -195,7 +195,7 @@ a {
 	width: 100%;
 	background-color: #fff;
 	z-index: 9999999;
-	padding: 12px 0px;
+	padding: 1px 0px;
 }
 .hamburger {
 	margin-top: 7px;
@@ -2466,6 +2466,8 @@ ul.timeline > li > .timeline-badge {
  @media screen and (max-width: 568px) {
 .pt-page-1 .main-section {
 	overflow-y: scroll;
+	background-image: url("home.jpg");
+	background-size: cover;
 }
 .inner-data {
 	top: 10%;
@@ -2546,7 +2548,10 @@ ul.timeline > li > .timeline-badge {
  @media screen and (max-width: 480px) {
 .pt-page-1 .main-section {
 	overflow-y: scroll;
+	background-image: url("home.jpg");
+	background-size: cover;
 }
+
 .inner-data {
 	top: 10%;
 }
@@ -2700,6 +2705,7 @@ ul.timeline > li > .timeline-badge {
  @media screen and (max-width: 375px) {
 .inner-data {
 	top: 28%;
+
 }
 .tag-line p span {
 	letter-spacing: 4px;
@@ -2774,6 +2780,7 @@ ul.timeline > li > .timeline-badge {
  @media screen and (max-width: 360px) {
 .inner-data {
 	top: 28%;
+
 }
 .tag-line p span {
 	letter-spacing: 4px;
@@ -2884,5 +2891,4 @@ ul.timeline > li > .timeline-badge {
 	position: absolute;
 	top: 41%;
 	left: 42%;
-}
 }
