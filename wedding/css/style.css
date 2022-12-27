@@ -1044,6 +1044,7 @@ ul .other-menu-2 {
 }
 .timeline-img img {
 	width: 100%;
+	border-radius:20px;
 }
 .timeline-footer p {
 	margin-bottom: 0;
